@@ -16,7 +16,7 @@
 </style> -->
 
 <style>
-  .search-btn{
+  .search-btn {
     background-color: #fe424d;
     color: #fff;
     border-radius: 25px;
@@ -25,17 +25,16 @@
     justify-content: center;
     align-items: center;
   }
-  .search-btn:hover{
+  .search-btn:hover {
     background-color: #fe424d;
     color: #fff;
   }
 
-  .search-inp{
+  .search-inp {
     border-radius: 25px;
     padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 1rem;
   }
-  
 </style>
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
@@ -68,15 +67,27 @@
           </button>
         </form>
       </div> -->
-
-      <div class="navbar-nav ms-auto">
-        <form class="d-flex" role="search">
-          <input class="form-control me-2 search-inp" type="search" placeholder="Search destinations">
-          <button class="btn search-btn" type="submit">
-            <i class="fa-solid fa-magnifying-glass" style="margin-right: 0.5rem;"></i> Search
-          </button>
-        </form>
-      </div>
+<div class="navbar-nav ms-auto">
+  <div class="navbar-nav ms-auto">
+    <form class="d-flex" role="search">
+      <input
+        class="form-control me-2 search-inp"
+        type="search"
+        placeholder="Search destinations"
+        
+      />
+      <button class="btn search-btn" type="submit">
+        <i
+          class="fa-solid fa-magnifying-glass"
+          style="margin-right: 0.5rem"
+        ></i>
+        Search
+      </button>
+   
+    </form>
+  </div>
+</div>
+      
 
       <div class="navbar-nav ms-auto">
         <a class="nav-link" href="/listings/new">Wonderlust Your home</a>
