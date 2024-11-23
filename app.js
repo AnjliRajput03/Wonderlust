@@ -80,11 +80,6 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-app.get('/listings', (req, res) => {
-  const currUser = req.user; // Assuming `req.user` contains user data
-  res.render('listings', { currUser }); // Pass `currUser` to the EJS template
-});
-
 app.use((req, res, next) => {
   res.locals.success = req.flash("success");
   res.locals.error = req.flash("error");
