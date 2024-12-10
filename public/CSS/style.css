@@ -138,8 +138,31 @@ body{
         height: 175px;
     }
     .searchBar2{
+      
         background-color: #fff;
         
+    }
+    .logo{
+      height: 40px;
+
+        background-color: #fff;
+        
+    }
+    .media {
+height: 250px ;
+width:350px  ;
+    }
+    .review{
+       
+        height: 200px !important ;
+        width: 266px !important;
+    }
+    .media2{
+        justify-content: center !important;
+    }
+    #map{
+      height: 280px !important;
+      width: 280px !important;
     }
   }
 

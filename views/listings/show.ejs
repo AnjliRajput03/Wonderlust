@@ -7,7 +7,7 @@
   <div class="col-8 offset-3">
     <h3><%= listing.title %></h3>
   </div>
-  <div class="card col-6 offset-3 show-card listing-card">
+  <div class="card media col-6 offset-3 show-card listing-card">
     <img src="<%=listing.image.url%>" class="card-img-top show-img" />
     <div class="card-body">
       <p class="card-text">Owned by :<i> <%= listing.owner.username %></i></p>
@@ -45,7 +45,7 @@
   </div>
   <% } %>
 
-  <div class="col-8 offset-3 mb-3">
+  <div class="col-8  offset-3 mb-3">
     <% if(currUser) {%>
     <h4>Leave a Review</h4>
     <form
@@ -54,7 +54,7 @@
       novalidate
       class="needs-validation"
     >
-      <div class="mb-3 mt-3">
+      <div class="mb-3  mt-3">
         <label for="rating" class="form-label">Rating</label>
         <fieldset class="starability-slot">
           <input
@@ -122,8 +122,8 @@
     <div class="row">
       <p><b>All reviews </b></p>
       <%for(review of listing.reviews){ %>
-      <div class="card col-5 ms-3 mb-3">
-        <div class="card-body">
+      <div class="card col-5 review ms-3 mb-3">
+        <div class="card-body review ">
           <h5 class="card-title">@<%= review.author.username %></h5>
           <p
             class="starability-result card-text"
@@ -144,7 +144,7 @@
     </div>
     <% } %> 
   </div>
-  <div class="col-6 offset-3 mb-3">
+  <div class="col-6 media2 offset-3 mb-3">
     <h1>Where you'll be</h1>
     <div id="map"></div>
   </div>
